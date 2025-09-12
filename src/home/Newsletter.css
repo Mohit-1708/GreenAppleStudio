@@ -1,0 +1,104 @@
+.newsletter {
+  padding: 20px 164px;
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif; /* apply font */
+}
+
+.newsletter-content {
+  display: flex;
+  align-items: center;       /* center vertically */
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.newsletter-left {
+  flex: 1;
+}
+
+.newsletter-title {
+  font-size: 36px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+  line-height: 142%;
+  font-weight: 600;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input[type="email"],
+.form-group input[type="date"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4a4a4a;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* ---- CHECKBOX + BUTTON WRAPPER ---- */
+.checkbox-submit-wrapper {
+  display: flex;
+  align-items: center;       /* button vertically centered with checkbox block */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* checkboxes stay stacked */
+.checkbox-group {
+  flex: 1;
+}
+
+.checkbox-group p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.checkbox-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Submit button styled bigger and aligned right */
+.submit-btn {
+  background: #D9D9D9CC;
+  color: #9419C5;
+  font-weight: 700;
+  border: none;
+  padding: 15px 15px;   /* taller → covers both checkbox rows */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: center; 
+  margin-top: 55px;  /* keep it centered with checkbox block */
+}
+
+/* Right side image */
+.newsletter-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* pushes image to right */
+}
+
+.character-img {
+  width: 500px;   /* same width as screenshot */
+  height: auto;
+  object-fit: contain;
+}

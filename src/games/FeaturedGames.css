@@ -1,0 +1,141 @@
+.featured {
+  padding: 60px 0;        
+  overflow: hidden;  
+   font-family: "Source Sans 3", sans-serif;      
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between; /* Title on left, buttons on right */
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nav-btn {
+  background: #D9D9D91A;
+  color: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #9419C5;
+  color: #fff;
+}
+
+.section-title {
+  font-family: "Source Sans 3", sans-serif; 
+  font-size: 44px;
+  font-weight: bold;
+  margin: 0;         
+  color: #fff;
+  text-align: left;  
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+
+.game-cards {
+  display: flex;
+  gap: 30px; /* keep same left spacing as heading */
+}
+
+.game-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #000; /* fallback */
+}
+
+
+.game-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.game-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 20%,
+    rgba(0, 0, 0, 0.2) 70%,
+    transparent 100%
+  );
+}
+
+.badge {
+  position: absolute;
+  top: 180px;
+  left: 15px;
+  background: #ff0;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.game-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.game-tags {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-outline {
+  flex: 1;
+  background-color: #D9D9D91A;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn-buy {
+  flex: 1;
+  background: #fff;
+  color:#9419C5;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+}

@@ -1,0 +1,128 @@
+.featured-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 60px 20px;
+}
+
+/* Glowing background container */
+.featured-glow {
+  position: relative;
+  border-radius: 20px; /* rounded corners */
+       /* controls glow spacing around image */
+  background: radial-gradient(circle at center,#05E005, transparent 70%);
+  box-shadow: 0 0 40px #05E005;
+}
+
+/* Card with image */
+.featured-card {
+    background-color: #05e005c2;
+  position: relative;
+  max-width: 1000px;
+  height: 400px; /* slightly smaller image */
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Foreground image */
+.featured-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit:fill;
+  border-radius: 16px;
+   clip-path: polygon(
+    0 0,       
+    85% 0,     
+    100% 15%,   
+    100% 100%,  /* bottom-right */
+    0 100%      /* bottom-left */
+  );
+}
+
+/* Overlay for text + buttons */
+.featured-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 3;
+}
+
+.featured-left {
+  color: #fff;
+}
+
+.game-title1 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.game-genre1 {
+    margin-top: 0;
+    margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.platform-icons img {
+  width:100px;
+  height: auto;
+}
+
+/* Right side buttons */
+.featured-right {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-outline,
+.btn-buy {
+    font-family: "Source Sans 3";
+  border-radius: 8px;     
+  font-size: 14px;         
+  padding: 8px 14px;       
+  white-space: nowrap;     
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* Outline button */
+.btn-outline {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: #9419C5;
+}
+
+/* Buy button */
+.btn-buy {
+  background: #fff;
+  color: #9419C5;
+}
+
+.btn-buy:hover {
+  background: #9419C5;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .featured-overlay {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .game-title {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,35 @@
+.socials {
+  text-align: center;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.socials-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 30px;
+}
+
+.social-icons a {
+  background: #fff;          /* white background */
+  color: #000;               /* black icon color */
+  width: 50px;               /* circle size */
+  height: 50px;
+  border-radius: 50%;        /* round shape */
+  display: flex;             /* center the icon */
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;           /* adjust icon size inside circle */
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #3a8bff;
+}
