@@ -7,7 +7,6 @@ const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Services', href: '#services' },
   { label: 'Our Games', href: '#games' },
-  { label: 'Contact', href: '#contact' },
 ];
 
 export default function Header() {
