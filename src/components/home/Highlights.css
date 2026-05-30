@@ -1,0 +1,66 @@
+.highlights {
+  padding: 60px 164px;
+}
+
+.highlights-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 36px;
+  color: #fff;
+}
+
+.highlight-cards {
+  display: flex;
+  gap: 28px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+
+.highlight-cards::-webkit-scrollbar { display: none; }
+
+.hl-card {
+  flex-shrink: 0;
+  width: 240px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hl-card:hover {
+  transform: translateY(-6px);
+}
+
+.hl-img {
+  width: 100%;
+  height: 160px;
+  border-radius: 14px;
+  object-fit: cover;
+  display: block;
+  transition: box-shadow 0.3s ease;
+}
+
+.hl-card:hover .hl-img {
+  box-shadow: 0 12px 32px rgba(5, 224, 5, 0.15);
+}
+
+.hl-title {
+  margin-top: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.hl-studio {
+  margin-top: 4px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+@media (max-width: 1100px) {
+  .highlights { padding: 60px 40px; }
+}
+
+@media (max-width: 768px) {
+  .highlights { padding: 40px 24px; }
+}
