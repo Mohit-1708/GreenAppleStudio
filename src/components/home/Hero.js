@@ -20,9 +20,9 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-text reveal-left" ref={textRef}>
         <p className="hero-eyebrow">GAME STUDIO</p>
-        <h1>
-          We Build Worlds.<br />
-          We Tell Stories.
+        <h1 className="hero-title">
+          <span className="hero-line">We build worlds.</span>
+          <span className="hero-line">We tell stories.</span>
         </h1>
         <p className="hero-sub">
           GreenApple Studio creates original games, publishes indie titles,

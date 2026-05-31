@@ -24,7 +24,7 @@
 /* ─── Text side ───────────────────────────────────────────────── */
 .hero-text {
   flex: 1;
-  max-width: 560px;
+  max-width: 680px;
 }
 
 .hero-eyebrow {
@@ -38,10 +38,15 @@
 
 .hero-text h1 {
   font-weight: 700;
-  font-size: 76px;
+  font-size: clamp(54px, 6vw, 76px);
   line-height: 1.1;
   color: #ffffff;
   margin-bottom: 24px;
+}
+
+.hero-line {
+  display: block;
+  white-space: nowrap;
 }
 
 .hero-sub {
@@ -91,6 +96,8 @@
     padding: 100px 24px 60px;
     min-height: auto;
   }
+  .hero-text h1 { font-size: clamp(44px, 11vw, 56px); }
+  .hero-line { white-space: normal; }
   .hero-image { width: 260px; }
   .hero-actions { justify-content: center; }
   .hero-sub { margin-left: auto; margin-right: auto; }
